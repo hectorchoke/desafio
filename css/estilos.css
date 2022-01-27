@@ -51,6 +51,8 @@ header{
 }
 .menu li:hover .subMenu{
     display: block;
+    background-color: aquamarine;
+    font-weight: bold;
 }
 
 /* usando Grid */
