@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Kids Power </title>
+
+            <!--llamando al css-->
+
+<link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+<body class="contacto">
+    <header>
+            <h1 class="titulocontacto">Contactanos</h1>
+
+            <!-- menu de navegacion -->
+
+        <nav class="navcontacto">
+            <ul>
+                <li>
+                    <a href="../index.html"> Home</a>
+                </li>
+                <li>
+                    <a href="niños.html"> Niños</a>
+                </li>
+                <li>
+                    <a href="niños.html"> Niñas </a>
+                </li>
+                <li>
+                    <a href="ofertas.html"> Ofertas </a>
+                </li>
+            </ul>
+        </nav>
+        <br>
+        <br>
+        <br>
+    </header>
+    <main>
+         <img src="../img/iconosdecontacto.jpg" alt="Medios de Contacto">
+            <br>
+            <br>
+
+            <!-- Crear nuestro formulario-->
+    <form>
+        <fieldset>
+            <legend> Formulario </legend>
+            <div>
+                <label for="nombre">Completa Tu Nombre y Apellido</label>
+                <input type="text" name="nombre"placeholder="Completa tu nombre y apellido" > 
+            </div>
+            <br>
+            <div>
+                <label for="email"> Completa Tu email</label>
+                <input type="email" required placeholder="completa tu email">
+            </div>
+            <br>
+            <div>
+                <label for="talle">Selecciona tu talle</label>
+                <select name="talle">
+                    <option value="">Elije tu talle</option>
+                    <option value="talle 2">Talle 2</option>
+                    <option value="talle 4">Talle 4</option>
+                    <option value="talle 6">Talle 6</option>
+                    <option value="talle 8">Talle 8</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                    <label for="Genero">Genero</label><br>
+                    <input type="radio" name="Genero" value="Niña" > Niña  <br>
+                    <input type="radio"name="Genero" value="Niño" > Niño <br>
+                    <input type="radio" name="Genero" value="Unisex" > Unisex <br>
+            </div>       
+
+            <br>
+
+            <div>
+                <input type="submit" value="enviar">
+                <input type="reset" value="resetear">
+            </div>
+        </fieldset>
+    </form>    
+            <br>
+
+    </main>
+    <footer>
+        <h6> Desarrollado por HDC </h6>
+    </footer>
+</body>
+</html>

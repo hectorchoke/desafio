@@ -1,0 +1,120 @@
+/* reseteo css  */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* color de fondo de la web */
+body{
+    background-color: darksalmon;
+}
+/* usando Flex */
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.portada{
+    width: 60%;
+    
+}
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+.menu >li > a{
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* subMenu */
+
+.subMenu{
+    position: relative;
+    background-color: blanchedalmond;
+    display: none;
+    width: 100%;
+}
+.subMenu li a{
+    display: block;
+    padding: 5px;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+}
+.menu li:hover .subMenu{
+    display: block;
+}
+
+/* usando Grid */
+main{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+                        "empresa empresa"
+                        "campera infoCampera"
+                        "vestido infoVestido"
+                        "buzo infoBuzo";
+    grid-template-columns: 40% 60% ;
+    grid-template-rows: 10% 30% 30% 30%;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+.empresa{
+    grid-area:empresa;
+    background-color: cornsilk;
+    text-align: center;
+
+      
+}
+.campera{
+    grid-area: campera;
+    background-color: cyan;
+    
+}
+.infoCampera{
+    grid-area: infoCampera;
+    background-color: darkgray;
+    font-size: 30px;
+    padding: 30px;
+}
+.vestido{
+    grid-area: vestido;
+}
+.infoVestido{
+    grid-area: infoVestido;
+}
+.buzo{
+    grid-area: buzo;
+}
+.infoBuzo{
+    grid-area: infoBuzo;
+}
+main img{
+    width: 150px;
+}
+footer{
+    text-align: center;
+}
+footer img{
+    width: 20px;
+    text-align: center;
+    font-size: 15px ;
+}
+@media screen and (max-width:800px){
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .empresa{
+        margin: 0;
+    }
+}
